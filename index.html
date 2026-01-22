@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-logo">&lt;portfolio /&gt;</div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" data-section="hero">&lt;home /&gt;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-section="about">&lt;about /&gt;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-section="projects">&lt;projects /&gt;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-section="skills">&lt;skills /&gt;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-section="contact">&lt;contact /&gt;</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="section active" id="hero">
+            <div class="tag-indicator">&lt;section id="hero"&gt;</div>
+            <h1 class="hero-title" id="heroTitle">
+                <!-- Animated text will be inserted here -->
+            </h1>
+            <p class="hero-description">
+                A passionate <strong>Full-Stack Developer</strong> crafting beautiful web experiences
+                with modern technologies.
+            </p>
+            <div class="hero-buttons">
+                <button class="tag-button" onclick="navigateTo('projects')">&lt;viewProjects /&gt;</button>
+                <button class="tag-button" onclick="navigateTo('contact')">&lt;contactMe /&gt;</button>
+            </div>
+            <div class="tag-indicator">&lt;/section&gt;</div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="tag-indicator">&lt;section id="about"&gt;</div>
+            <div class="about-card">
+                <h2 class="section-title">&lt;h2&gt;About Me&lt;/h2&gt;</h2>
+                <p class="about-text">&lt;p&gt;I'm a creative developer with 6+ years of experience building modern web applications.&lt;/p&gt;</p>
+                <p class="about-text">&lt;p&gt;I specialize in React, TypeScript, and crafting pixel-perfect user interfaces.&lt;/p&gt;</p>
+                <p class="about-text">&lt;p&gt;When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee.&lt;/p&gt;</p>
+            </div>
+            <div class="tag-indicator">&lt;/section&gt;</div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="tag-indicator">&lt;section id="projects"&gt;</div>
+            <h2 class="section-title">&lt;h2&gt;Featured Projects&lt;/h2&gt;</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="tag-indicator">&lt;div class="project"&gt;</div>
+                    <h3 class="project-title">Sejel – Finance Platform</h3>
+                    <p class="project-description">Chat platform including event management, and store with payment integration</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">&lt;Vue.js /&gt;</span>
+                        <span class="tech-tag">&lt;Laravel /&gt;</span>
+                        <span class="tech-tag">&lt;Pusher /&gt;</span>
+                        <span class="tech-tag">&lt;Stripe API /&gt;</span>
+                        <span class="tech-tag">&lt;Google API /&gt;</span>
+                        <span class="tech-tag">&lt;Tailwind CSS /&gt;</span>
+                    </div>
+                    <div class="tag-indicator">&lt;/div&gt;</div>
+                </div>
+                <div class="project-card">
+                    <div class="tag-indicator">&lt;div class="project"&gt;</div>
+                    <h3 class="project-title">Itinerary – Revenue Project</h3>
+                    <p class="project-description">Chat platform including event management, and store with payment integration</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">&lt;Vue.js /&gt;</span>
+                        <span class="tech-tag">&lt;Laravel /&gt;</span>
+                        <span class="tech-tag">&lt;Pusher /&gt;</span>
+                        <span class="tech-tag">&lt;Stripe API /&gt;</span>
+                        <span class="tech-tag">&lt;Google API /&gt;</span>
+                        <span class="tech-tag">&lt;Tailwind CSS /&gt;</span>
+                    </div>
+                    <div class="tag-indicator">&lt;/div&gt;</div>
+                </div>
+                <div class="project-card">
+                    <div class="tag-indicator">&lt;div class="project"&gt;</div>
+                    <h3 class="project-title">Juno</h3>
+                    <p class="project-description">Hospitality Platform to manage reservations and guest experiences from A~Z</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">&lt;React.tsx /&gt;</span>
+                        <span class="tech-tag">&lt;TypeScript /&gt;</span>
+                        <span class="tech-tag">&lt;Laravel /&gt;</span>
+                        <span class="tech-tag">&lt;Pusher /&gt;</span>
+                        <span class="tech-tag">&lt;External APIs for (Airbnb, Uplisting, ...) /&gt;</span>
+                        <span class="tech-tag">&lt;Zapier /&gt;</span>
+                        <span class="tech-tag">&lt;Bootstrap /&gt;</span>
+                    </div>
+                    <div class="tag-indicator">&lt;/div&gt;</div>
+                </div>
+                <div class="project-card">
+                    <div class="tag-indicator">&lt;div class="project"&gt;</div>
+                    <h3 class="project-title">House Manual For Rouf Stay</h3>
+                    <p class="project-description">Guidance for guest</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">&lt;Blade /&gt;</span>
+                        <span class="tech-tag">&lt;laravel /&gt;</span>
+                        <span class="tech-tag">&lt;Multi domain handling /&gt;</span>
+                        <span class="tech-tag">&lt;bootstrap /&gt;</span>
+                    </div>
+                    <div class="tag-indicator">&lt;/div&gt;</div>
+                </div>
+                <div class="project-card">
+                    <div class="tag-indicator">&lt;div class="project"&gt;</div>
+                    <h3 class="project-title">EWCD</h3>
+                    <p class="project-description">Chat platform including event management, and store with payment integration</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">&lt;Vue.js /&gt;</span>
+                        <span class="tech-tag">&lt;Laravel /&gt;</span>
+                        <span class="tech-tag">&lt;Pusher /&gt;</span>
+                        <span class="tech-tag">&lt;Stripe API /&gt;</span>
+                        <span class="tech-tag">&lt;Google API /&gt;</span>
+                        <span class="tech-tag">&lt;Bootstrap /&gt;</span>
+                    </div>
+                    <div class="tag-indicator">&lt;/div&gt;</div>
+                </div>
+                <div class="project-card">
+                    <div class="tag-indicator">&lt;div class="project"&gt;</div>
+                    <h3 class="project-title">Photo Studio</h3>
+                    <p class="project-description">internal Windows Program to manage Photography Studio</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">&lt;VB.net /&gt;</span>
+                    </div>
+                    <div class="tag-indicator">&lt;/div&gt;</div>
+                </div>
+            </div>
+            <div class="tag-indicator">&lt;/section&gt;</div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="tag-indicator">&lt;section id="skills"&gt;</div>
+            <h2 class="section-title">&lt;h2&gt;Skills &amp; Technologies&lt;/h2&gt;</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 class="skill-title">&lt;frontend /&gt;</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">&lt;React.tsx /&gt;</li>
+                        <li class="skill-item">&lt;Vue.js /&gt;</li>
+                        <li class="skill-item">&lt;TypeScript /&gt;</li>
+                        <li class="skill-item">&lt;React native /&gt;</li>
+                        <li class="skill-item">&lt;Tailwind CSS /&gt;</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title">&lt;backend /&gt;</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">&lt;Laravel/&gt;</li>
+                        <li class="skill-item">&lt;Mysql /&gt;</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title">&lt;tools /&gt;</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">&lt;Git /&gt;</li>
+                        <li class="skill-item">&lt;Docker /&gt;</li>
+                        <li class="skill-item">&lt;VS Code /&gt;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tag-indicator">&lt;/section&gt;</div>
+        </section>
+
+       <!-- Contact Section -->
+<section class="section" id="contact">
+  <div class="tag-indicator">&lt;section id="contact"&gt;</div>
+  <div class="contact-container">
+    <h2 class="section-title">&lt;h2&gt;Get In Touch&lt;/h2&gt;</h2>
+    <div class="contact-form">
+      <div class="form-group">
+        <label class="form-label">&lt;label&gt;Name&lt;/label&gt;</label>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="&lt;Raed Ghanim /&gt;"
+          required
+          readonly
+        >
+      </div>
+      <div class="form-group">
+        <label class="form-label">&lt;label&gt;Email&lt;/label&gt;</label>
+        <a
+        href="mailto:raed.ghanim.2014@gmail.com"
+        class="form-input fake-input"
+        style="
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+            line-height: 1.5;
+        "
+        >
+        &lt;raed.ghanim.2014@gmail.com /&gt;
+        </a>
+      </div>
+      <div class="form-group">
+        <label class="form-label">&lt;label&gt;Phone&lt;/label&gt;</label>
+        <a href="tel:+96171251044" class="form-input fake-input" style="
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 1rem;
+        cursor: pointer;
+        ">
+        &lt;+961 71 25 10 44 /&gt;
+        </a>
+      </div>
+    </div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/raed-ghanim-8064a614a/" class="social-link">&lt;linkedin /&gt;</a>
+    </div>
+  </div>
+  <div class="tag-indicator">&lt;/section&gt;</div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">&lt;footer&gt;Built with HTML, CSS &amp; JavaScript&lt;/footer&gt;</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
